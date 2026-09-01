@@ -1,0 +1,6 @@
+import numpy as np
+a=np.arange(20).reshape(5,2,2)
+print("Array is:\n",a)
+print("Data Type Before Conversion: ",a.dtype)
+b=a.astype(np.int32)
+print("Data Type After Conversion: ",b.dtype)
