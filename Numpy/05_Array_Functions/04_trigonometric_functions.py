@@ -1,0 +1,10 @@
+import numpy as np
+a1=np.random.random((3,3))
+a1=np.round(a1*100)
+print("Array is:\n",a1)
+print("Array of sin is: \n")
+print(np.sin(a1))
+print("Array of cos is: \n")
+print(np.cos(a1))
+print("Array of tan is: \n")
+print(np.tan(a1))
