@@ -1,0 +1,19 @@
+import numpy as np
+a1=np.arange(10)#1D Array
+a2=np.arange(12).reshape(3,4)#2D Array
+a3=np.arange(8).reshape(2,2,2) #3D Array
+print("1D Array is:\n",a1)
+print("2D array is:\n",a2)
+print("3D array is:\n",a3)
+# We can access any element from this type of arrays by using indexing with their index positions
+# if the array is 1D and we have to access a single element then simply we have to give its index position
+print("1D array indexing:\n")
+print(a1[3]) #Using this we will get element which is placed on 3rd index in the array.
+
+# if the array is 2D then we have to give its row index and then column index to get a particular element from the array.
+print("2D array indexing:\n",a2[2,2])
+
+# if the array is 3D then we know that the 3D array is made up of two 2D arrays so when we want to acces an element
+#  from the 3D array then firstly we have to give array indexes like the element lies in which array 0th array or 
+# 1st array then we have to  specify the row and column of the element in that specific array which is in the 3D array.
+print("3D array indexing:\n",a3[1,1,1])
