@@ -1,0 +1,16 @@
+import numpy as np
+a1=np.arange(10)
+a2=np.arange(12).reshape(3,4)
+a3=np.arange(27).reshape(3,3,3)
+
+print("1D array iterating:\n")
+for i in a1: #When we run loop on 1D array it prints every element one by one 
+    print(i)
+
+print("2D array iterating:\n")
+for i in a2: #When we run loop on 2D array it prints every row one by one
+    print(i)
+
+print("3D array iterating:\n")    
+for i in a3: #When we run loop on 3D array it prints every 2D array one by one
+    print(i)
