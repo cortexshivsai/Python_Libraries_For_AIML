@@ -1,0 +1,22 @@
+# Speed of list 
+a=[i for i in range(10000000)]
+b=[i for i in range(10000000,20000000)]
+c=[]
+import time
+start1=time.time()
+for i in range(len(a)):
+    c.append(a[i]+b[i])
+end1=time.time()    
+print("Executuion Time required for list: ",end1-start1)
+
+# Speed of numpy
+import numpy as np
+a=np.arange(10000000)
+b=np.arange(10000000,20000000)
+start2=time.time()
+c=a+b
+end2=time.time()
+print("Execution Time required for Numpy: ",end2-start2)
+
+print(f"Numpy is {round((end1-start1)/(end2-start2))}X Fatser Than Python Lists")
+
