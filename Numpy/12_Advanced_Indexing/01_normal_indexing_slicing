@@ -1,0 +1,5 @@
+import numpy as np
+a=np.arange(12).reshape(4,3)
+print("Array is:\n ",a)
+print("Array index for item 5: ",a[1,2])
+print("Array slicing for elements 4,5 & 7,8:\n",a[1:3,1:3])
