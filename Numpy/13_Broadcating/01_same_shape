@@ -1,0 +1,6 @@
+import numpy as np
+a=np.arange(6).reshape(2,3)
+b=np.arange(6,12).reshape(2,3)
+print("Array A:\n",a)
+print("Array B:\n",b)
+print("Addition of two same arrays:\n",a+b)
