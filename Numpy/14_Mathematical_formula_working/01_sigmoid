@@ -1,0 +1,6 @@
+import numpy as np
+a=np.arange(100)
+def sigmoid(arr):
+    a= 1/(1+np.exp(-(arr)))
+    print(a)
+sigmoid(a)
