@@ -1,0 +1,11 @@
+import numpy as np
+a=np.random.randint(1,100,15)
+b=np.random.randint(1,100,24).reshape(6,4)
+print("Unsorted 1D Array A: \n",a)
+print("Sorted 1D Array A:\n ",np.sort(a))
+print("Unsorted 2D Array B:\n ",b)
+print("Sorted 2D Array A:\n ",np.sort(b))
+
+print("Column-Wise Sorting of 2D array B:\n",np.sort(b,axis=0))
+print("Descending Order Sorting of 1D array a:\n",np.sort(a)[::-1])
+print("Descending Order Sorting of 2D array B:\n",np.sort(b)[::-1])
