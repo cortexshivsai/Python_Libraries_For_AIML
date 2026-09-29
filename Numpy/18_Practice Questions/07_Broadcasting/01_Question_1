@@ -1,0 +1,6 @@
+#Add 10 to every element.
+import numpy as np
+a = np.array([1, 2, 3])
+print("Array before adding 10:\n ",a)
+b = 10
+print("Array after adding 10:\n ",np.add(a,b))
