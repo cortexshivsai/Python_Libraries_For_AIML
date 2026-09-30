@@ -1,0 +1,4 @@
+#Sort the scores.
+import numpy as np
+scores = np.array([72, 91, 45, 88, 63, 99, 54])
+print("Scores after sorting: ",np.sort(scores))
