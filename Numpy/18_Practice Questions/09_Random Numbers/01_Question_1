@@ -1,0 +1,9 @@
+#Generate 10 random integers between 1 and 100
+import numpy as np
+print("10 random integers between 1 and 100: ",np.random.randint(1,101,10))
+
+# OR
+import numpy as np
+rng = np.random.default_rng()
+numbers = rng.integers(1, 101, size=10)
+print(numbers)
