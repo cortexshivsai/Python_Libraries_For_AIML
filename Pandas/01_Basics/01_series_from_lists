@@ -1,0 +1,27 @@
+import numpy as np
+import pandas as pd
+
+# String
+
+country=['India','UK','USA','Russia','Germany']
+a=pd.Series(country)
+print(a)
+
+
+# Integer
+numbers=[10,15,63,42,89]
+b=pd.Series(numbers)
+print(b)
+
+# Custom Index
+
+marks=[60,96,75,80]
+subjects=['Maths','Marathi','English','Science']
+c=pd.Series(marks,index=subjects)
+print(c)
+
+# Setting a Name
+marks=[60,96,75,80]
+subjects=['Maths','Marathi','English','Science']
+d=pd.Series(marks,index=subjects,name="Shiv")
+print(d)
